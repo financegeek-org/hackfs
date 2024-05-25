@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@lit-protocol/lit-node-client": "^5.1.0"
+  }
+}
