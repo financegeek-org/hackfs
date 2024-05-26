@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "@lit-protocol/contracts-sdk": "^5.1.0",
+    "@lit-protocol/lit-auth-client": "^5.1.0",
     "@lit-protocol/lit-node-client": "^5.1.0"
   }
 }
