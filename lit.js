@@ -50,7 +50,6 @@ const genAuthSig = async (
   uri,
   resources
 ) => {
-
   let blockHash = await client.getLatestBlockhash();
   const message = await createSiweMessageWithRecaps({
     walletAddress: wallet.address,
@@ -78,7 +77,7 @@ const genSession = async (
     chain: "ethereum",
     resourceAbilityRequests: resources,
     authNeededCallback: async (params) => {
-      console.log("resourceAbilityRequests:", params.resources);
+      console.log("XXXXX resourceAbilityRequests:", params);
 
       if (!params.expiration) {
         throw new Error("expiration is required");
@@ -94,7 +93,7 @@ const genSession = async (
 
       // generate the authSig for the inner signature of the session
       // we need capabilities to assure that only one api key may be decrypted
-      const authSig = genAuthSig(wallet, client, params.uri, params.resourceAbilityRequests ?? []);
+      const authSig = genAuthSig(wallet, client, params.uri, resources ?? []);
       return authSig;
     }
   });
@@ -105,6 +104,11 @@ const genSession = async (
 const main = async () => {
   let client = new LitNodeClient({
     litNetwork: 'cayenne',
+    /*
+    storageProvider: {
+      provider: new LocalStorage("./lit_storage.db"),
+      },
+      */
     debug: true
   });
 
@@ -158,11 +162,10 @@ const main = async () => {
     {
       resource: new LitAccessControlConditionResource(accsResourceString),
       ability: LitAbility.AccessControlConditionDecryption,
-
     }
-  ]);
+  ]
+  );
   console.log("action source code: ", genActionSource(query));
-  exit();
   /*
   Here we use the encrypted key by sending the
   ciphertext and dataTiEncryptHash to the action
