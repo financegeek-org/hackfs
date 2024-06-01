@@ -1,0 +1,475 @@
+chineseman@ls-74Q7HK3:/mnt/c/code/developer-guides-code/lit-action-using-fetch/nodejs$ npx @dotenvx/dotenvx run -- node src/index2.js
+[dotenvx@0.37.1] injecting env (1) from .env
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:30.776Z] [DEBUG] [core] Looks like you are running in NodeJS and did not provide a storage provider, your sessions will not be cached
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:30.872Z] [DEBUG] [core] ✅ [BLS SDK] wasmExports loaded. 12 functions available. Run 'wasmExports' in the console to see them.
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:30.876Z] [DEBUG] [core] ✅ [ECDSA SDK NodeJS] wasmECDSA loaded. 7 functions available. Run 'wasmECDSA' in the console to see them.
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:30.877Z] [DEBUG] [core] ✅ [SEV SNP Utils SDK] wasmSevSnpUtils loaded. 13 functions available. Run 'wasmSevSnpUtils' in the console to see them.
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.402Z] [DEBUG] [core] handshakeWithNode https://cayenne.litgateway.com:7370/web/handshake
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.403Z] [DEBUG] [core] [id: 5e1abf2da1f0f] sendCommandToNode with url https://cayenne.litgateway.com:7370/web/handshake and data {
+  clientPublicKey: 'test',
+  challenge: 'e982bcacfd1ea27b6bd7b53222ff670f8f4cf4802a65fee6fff4ad647468c4dc',
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.407Z] [DEBUG] [core] handshakeWithNode https://cayenne.litgateway.com:7371/web/handshake
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.407Z] [DEBUG] [core] [id: 5e1abf2da1f0f] sendCommandToNode with url https://cayenne.litgateway.com:7371/web/handshake and data {
+  clientPublicKey: 'test',
+  challenge: '28b0121d51be7539bda09c8345e96f4249190f0c872e9f7d4fe63c0a220148b2',
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.410Z] [DEBUG] [core] handshakeWithNode https://cayenne.litgateway.com:7372/web/handshake
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.410Z] [DEBUG] [core] [id: 5e1abf2da1f0f] sendCommandToNode with url https://cayenne.litgateway.com:7372/web/handshake and data {
+  clientPublicKey: 'test',
+  challenge: '95909702aca116c34d7439e7ff0cb375f71db66f25b7279e8700e17720e27c25',
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.810Z] [DEBUG] [core] Handshake with https://cayenne.litgateway.com:7370 returned keys:  {
+  serverPubKey: '',
+  subnetPubKey: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  networkPubKey: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  networkPubKeySet: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  hdRootPubkeys: [
+    '035e8965dadd30a060eb723f108b2af5e407e78311ad00c91fb2b2384b25a6026d',
+    '027a51e9dadc39a183dfe6ba3ad0b14ebe483c789e87b94bb229c81b92a56fbb7a',
+    '024b63f5623bafac76762b8edd03fa4ab385ffcfa49bba1c1cf0aac5fc342e8ff6',
+    '022ea6845d36f84227c4509b67a024ac5e3bbb80cbb9920d702a800dc53ee8d5ff',
+    '03fb1f71299b1e8e0c17f21392b04e4bb83fd649331f4b25dc7e4ba415f5d104b8',
+    '0210a6ae11ebbe638e727a087891e4099ae0fff30b9b7e8057ebdd5dad593a0b92',
+    '025b48e1a4262db8919d5b6b6b1255d5de78860fd7ef39addfb3d81620ba9c8e0d',
+    '029298014dc9b4e96f8be7cfac8d419fc27ee56c7d6cbb9fbfc576b3a5f64e6602',
+    '0280f89331f90861f4a8294173909f1cab7b7ad6d94d1f0251680c9051d2d901ed',
+    '02e2bd9774da61c72f42f14128c15aef6e02bfd3788b2d5d463a13a8bb47848b6d'
+  ],
+  latestBlockhash: '0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e'
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.817Z] [DEBUG] [core] Handshake with https://cayenne.litgateway.com:7371 returned keys:  {
+  serverPubKey: '',
+  subnetPubKey: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  networkPubKey: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  networkPubKeySet: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  hdRootPubkeys: [
+    '035e8965dadd30a060eb723f108b2af5e407e78311ad00c91fb2b2384b25a6026d',
+    '027a51e9dadc39a183dfe6ba3ad0b14ebe483c789e87b94bb229c81b92a56fbb7a',
+    '024b63f5623bafac76762b8edd03fa4ab385ffcfa49bba1c1cf0aac5fc342e8ff6',
+    '022ea6845d36f84227c4509b67a024ac5e3bbb80cbb9920d702a800dc53ee8d5ff',
+    '03fb1f71299b1e8e0c17f21392b04e4bb83fd649331f4b25dc7e4ba415f5d104b8',
+    '0210a6ae11ebbe638e727a087891e4099ae0fff30b9b7e8057ebdd5dad593a0b92',
+    '025b48e1a4262db8919d5b6b6b1255d5de78860fd7ef39addfb3d81620ba9c8e0d',
+    '029298014dc9b4e96f8be7cfac8d419fc27ee56c7d6cbb9fbfc576b3a5f64e6602',
+    '0280f89331f90861f4a8294173909f1cab7b7ad6d94d1f0251680c9051d2d901ed',
+    '02e2bd9774da61c72f42f14128c15aef6e02bfd3788b2d5d463a13a8bb47848b6d'
+  ],
+  latestBlockhash: '0x31a5b4d1ea1d8a4c1d395a4cb99356ab91585a33d4a18e0be5f014ca75d4118d'
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.832Z] [DEBUG] [core] Handshake with https://cayenne.litgateway.com:7372 returned keys:  {
+  serverPubKey: '',
+  subnetPubKey: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  networkPubKey: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  networkPubKeySet: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  hdRootPubkeys: [
+    '035e8965dadd30a060eb723f108b2af5e407e78311ad00c91fb2b2384b25a6026d',
+    '027a51e9dadc39a183dfe6ba3ad0b14ebe483c789e87b94bb229c81b92a56fbb7a',
+    '024b63f5623bafac76762b8edd03fa4ab385ffcfa49bba1c1cf0aac5fc342e8ff6',
+    '022ea6845d36f84227c4509b67a024ac5e3bbb80cbb9920d702a800dc53ee8d5ff',
+    '03fb1f71299b1e8e0c17f21392b04e4bb83fd649331f4b25dc7e4ba415f5d104b8',
+    '0210a6ae11ebbe638e727a087891e4099ae0fff30b9b7e8057ebdd5dad593a0b92',
+    '025b48e1a4262db8919d5b6b6b1255d5de78860fd7ef39addfb3d81620ba9c8e0d',
+    '029298014dc9b4e96f8be7cfac8d419fc27ee56c7d6cbb9fbfc576b3a5f64e6602',
+    '0280f89331f90861f4a8294173909f1cab7b7ad6d94d1f0251680c9051d2d901ed',
+    '02e2bd9774da61c72f42f14128c15aef6e02bfd3788b2d5d463a13a8bb47848b6d'
+  ],
+  latestBlockhash: '0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e'
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.835Z] [DEBUG] [core] listening for state change on staking contract:  0x5bFa704aF947b3b0f966e4248DED7bfa6edeF952
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.836Z] [DEBUG] [core] 🔥 lit is ready. "litNodeClient" variable is ready to use globally.
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.836Z] [DEBUG] [core] current network config {
+  networkPubkey: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  networkPubKeySet: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  hdRootPubkeys: [
+    '035e8965dadd30a060eb723f108b2af5e407e78311ad00c91fb2b2384b25a6026d',
+    '027a51e9dadc39a183dfe6ba3ad0b14ebe483c789e87b94bb229c81b92a56fbb7a',
+    '024b63f5623bafac76762b8edd03fa4ab385ffcfa49bba1c1cf0aac5fc342e8ff6',
+    '022ea6845d36f84227c4509b67a024ac5e3bbb80cbb9920d702a800dc53ee8d5ff',
+    '03fb1f71299b1e8e0c17f21392b04e4bb83fd649331f4b25dc7e4ba415f5d104b8',
+    '0210a6ae11ebbe638e727a087891e4099ae0fff30b9b7e8057ebdd5dad593a0b92',
+    '025b48e1a4262db8919d5b6b6b1255d5de78860fd7ef39addfb3d81620ba9c8e0d',
+    '029298014dc9b4e96f8be7cfac8d419fc27ee56c7d6cbb9fbfc576b3a5f64e6602',
+    '0280f89331f90861f4a8294173909f1cab7b7ad6d94d1f0251680c9051d2d901ed',
+    '02e2bd9774da61c72f42f14128c15aef6e02bfd3788b2d5d463a13a8bb47848b6d'
+  ],
+  subnetPubkey: 'a43499a4b786da2dd28af9f209eb152ff6f646b34b68a02954967271e17fb4c511fd67b81e067f690c6f38acab70585d',
+  latestBlockhash: '0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e'
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.866Z] [DEBUG] [core] Hashing access control conditions:  [{"contractAddress":"","chain":"ethereum","standardContractType":"","method":"","parameters":[":userAddress"],"returnValueTest":{"comparator":"=","value":"0x6Bd07000C5F746af69BEe7f151eb30285a6678B2"}}]
+cipher text: qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD hash: 39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e
+XXXXX: 9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e
+Storage key "lit-session-key" is missing. Not a problem. Contiune...
+Localstorage not available. Not a problem. Contiune...
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.913Z] [DEBUG] [core] getWalletSig - flow starts
+        storageKey: lit-wallet-sig
+        storedWalletSigOrError: {"type":"ERROR","result":{"message":"Failed to get lit-wallet-sig from local storage","errorKind":"Unexpected","errorCode":"LocalStorageItemNotFoundException"}}
+
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.914Z] [DEBUG] [core] getWalletSig - flow 1
+Storage key "lit-wallet-sig" is missing. Not a problem. Continue...
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.915Z] [DEBUG] [core] getWalletSig - flow 1.1
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:31.916Z] [DEBUG] [core] callback body: {
+  chain: 'ethereum',
+  statement: 'I further authorize the stated URI to perform the following actions on my behalf:',
+  resources: [ 'urn:recap:eyJhdHQiOnt9LCJwcmYiOltdfQ' ],
+  expiration: '2024-06-02T04:41:31.913Z',
+  uri: 'lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+  nonce: '0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e'
+}
+XXXXX resourceAbilityRequests: {
+  chain: 'ethereum',
+  statement: 'I further authorize the stated URI to perform the following actions on my behalf:',
+  resources: [ 'urn:recap:eyJhdHQiOnt9LCJwcmYiOltdfQ' ],
+  expiration: '2024-06-02T04:41:31.913Z',
+  uri: 'lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+  nonce: '0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e'
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.336Z] [DEBUG] [core] [id: 962443fd3484b] sendCommandToNode with url https://cayenne.litgateway.com:7370/web/handshake and data {
+  clientPublicKey: 'test',
+  challenge: 'ca325a17c3df4a31dd155ee296e415e50f15ec5c558cbb6ca3d1e01f9c4f0031',
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.340Z] [DEBUG] [core] [id: 962443fd3484b] sendCommandToNode with url https://cayenne.litgateway.com:7371/web/handshake and data {
+  clientPublicKey: 'test',
+  challenge: '941b6abe1c13d9ac2ba2d8746c53966971e63efb39ce78ee438d69516185b9da',
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.342Z] [DEBUG] [core] [id: 962443fd3484b] sendCommandToNode with url https://cayenne.litgateway.com:7372/web/handshake and data {
+  clientPublicKey: 'test',
+  challenge: 'cc683ea97db8fd74ddafd60f294eb18e9e38c1bdbcb683e5770588a5c6e38ab2',
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.475Z] [DEBUG] [core] getWalletSig - flow 1.3
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.476Z] [DEBUG] [core] getWalletSig - flow 1.4
+Unable to store walletSig in local storage. Not a problem. Continue...
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.478Z] [DEBUG] [core] getWalletSig - flow 3
+validate() has been deprecated, please update your code to use verify(). validate() may be removed in future versions.
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.542Z] [DEBUG] [core] signatures: {
+  'https://cayenne.litgateway.com:7372': {
+    sig: 'faa6c6d1aa7fe1914f5be3e361e19bd416e25dc7bb7c6cacb6f8ca7c77233350f135e9da0535b69ba2aea8a77ff5e982c37d732e17db2d2c3f361b3f39eea400',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7372"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  'https://cayenne.litgateway.com:7370': {
+    sig: '6e649898df0b43d187996308bcf28ec733715f74f596eba06786f23d464591a7ac95381414240d587db0986b6d25b47de0edfc67b71cf4c88f2403a8d285a507',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7370"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  'https://cayenne.litgateway.com:7371': {
+    sig: 'b263b5b2d38ef217d84dc264a4876f6905c1f4d3c5393d7bd5524b9afb344e1c34c86f0fac408fe1c70b023d8ae535ffda64bef836ee6dff5fc36508e02d7303',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7371"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  }
+}
+action source code:  (async () => {
+      const apiKey = await Lit.Actions.decryptAndCombine({
+          accessControlConditions,
+          ciphertext,
+          dataToEncryptHash,
+          authSig: null,
+          chain: 'ethereum',
+      });
+      const response = await fetch(
+        "https://api-inference.huggingface.co/models/gpt2",
+        {
+            headers: { {
+              'Authorization': "Bearer " + apiKey
+          } },
+            method: "POST",
+            body: JSON.stringify(data),
+        }
+    );
+      let data = await response.json();
+      Lit.Actions.setResponse({ response: JSON.stringify(data) });
+  })();
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.556Z] [DEBUG] [core] [id: a465c918ab40a] getJsExecutionShares
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.556Z] [DEBUG] [core] [id: a465c918ab40a] sendCommandToNode with url https://cayenne.litgateway.com:7372/web/execute and data {
+  authSig: {
+    sig: 'faa6c6d1aa7fe1914f5be3e361e19bd416e25dc7bb7c6cacb6f8ca7c77233350f135e9da0535b69ba2aea8a77ff5e982c37d732e17db2d2c3f361b3f39eea400',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7372"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  code: 'KGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgYXBpS2V5ID0gYXdhaXQgTGl0LkFjdGlvbnMuZGVjcnlwdEFuZENvbWJpbmUoewogICAgICAgICAgYWNjZXNzQ29udHJvbENvbmRpdGlvbnMsCiAgICAgICAgICBjaXBoZXJ0ZXh0LAogICAgICAgICAgZGF0YVRvRW5jcnlwdEhhc2gsCiAgICAgICAgICBhdXRoU2lnOiBudWxsLAogICAgICAgICAgY2hhaW46ICdldGhlcmV1bScsCiAgICAgIH0pOwogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKAogICAgICAgICJodHRwczovL2FwaS1pbmZlcmVuY2UuaHVnZ2luZ2ZhY2UuY28vbW9kZWxzL2dwdDIiLAogICAgICAgIHsKICAgICAgICAgICAgaGVhZGVyczogeyB7CiAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAiQmVhcmVyICIgKyBhcGlLZXkKICAgICAgICAgIH0gfSwKICAgICAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KGRhdGEpLAogICAgICAgIH0KICAgICk7CiAgICAgIGxldCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICBMaXQuQWN0aW9ucy5zZXRSZXNwb25zZSh7IHJlc3BvbnNlOiBKU09OLnN0cmluZ2lmeShkYXRhKSB9KTsKICB9KSgpOw==',
+  ipfsId: undefined,
+  jsParams: {
+    accessControlConditions: [ [Object] ],
+    ciphertext: 'qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD',
+    dataToEncryptHash: '39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'
+  },
+  authMethods: undefined,
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.559Z] [DEBUG] [core] [id: a465c918ab40a] sendCommandToNode with url https://cayenne.litgateway.com:7370/web/execute and data {
+  authSig: {
+    sig: '6e649898df0b43d187996308bcf28ec733715f74f596eba06786f23d464591a7ac95381414240d587db0986b6d25b47de0edfc67b71cf4c88f2403a8d285a507',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7370"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  code: 'KGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgYXBpS2V5ID0gYXdhaXQgTGl0LkFjdGlvbnMuZGVjcnlwdEFuZENvbWJpbmUoewogICAgICAgICAgYWNjZXNzQ29udHJvbENvbmRpdGlvbnMsCiAgICAgICAgICBjaXBoZXJ0ZXh0LAogICAgICAgICAgZGF0YVRvRW5jcnlwdEhhc2gsCiAgICAgICAgICBhdXRoU2lnOiBudWxsLAogICAgICAgICAgY2hhaW46ICdldGhlcmV1bScsCiAgICAgIH0pOwogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKAogICAgICAgICJodHRwczovL2FwaS1pbmZlcmVuY2UuaHVnZ2luZ2ZhY2UuY28vbW9kZWxzL2dwdDIiLAogICAgICAgIHsKICAgICAgICAgICAgaGVhZGVyczogeyB7CiAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAiQmVhcmVyICIgKyBhcGlLZXkKICAgICAgICAgIH0gfSwKICAgICAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KGRhdGEpLAogICAgICAgIH0KICAgICk7CiAgICAgIGxldCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICBMaXQuQWN0aW9ucy5zZXRSZXNwb25zZSh7IHJlc3BvbnNlOiBKU09OLnN0cmluZ2lmeShkYXRhKSB9KTsKICB9KSgpOw==',
+  ipfsId: undefined,
+  jsParams: {
+    accessControlConditions: [ [Object] ],
+    ciphertext: 'qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD',
+    dataToEncryptHash: '39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'
+  },
+  authMethods: undefined,
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.563Z] [DEBUG] [core] [id: a465c918ab40a] sendCommandToNode with url https://cayenne.litgateway.com:7371/web/execute and data {
+  authSig: {
+    sig: 'b263b5b2d38ef217d84dc264a4876f6905c1f4d3c5393d7bd5524b9afb344e1c34c86f0fac408fe1c70b023d8ae535ffda64bef836ee6dff5fc36508e02d7303',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7371"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  code: 'KGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgYXBpS2V5ID0gYXdhaXQgTGl0LkFjdGlvbnMuZGVjcnlwdEFuZENvbWJpbmUoewogICAgICAgICAgYWNjZXNzQ29udHJvbENvbmRpdGlvbnMsCiAgICAgICAgICBjaXBoZXJ0ZXh0LAogICAgICAgICAgZGF0YVRvRW5jcnlwdEhhc2gsCiAgICAgICAgICBhdXRoU2lnOiBudWxsLAogICAgICAgICAgY2hhaW46ICdldGhlcmV1bScsCiAgICAgIH0pOwogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKAogICAgICAgICJodHRwczovL2FwaS1pbmZlcmVuY2UuaHVnZ2luZ2ZhY2UuY28vbW9kZWxzL2dwdDIiLAogICAgICAgIHsKICAgICAgICAgICAgaGVhZGVyczogeyB7CiAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAiQmVhcmVyICIgKyBhcGlLZXkKICAgICAgICAgIH0gfSwKICAgICAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KGRhdGEpLAogICAgICAgIH0KICAgICk7CiAgICAgIGxldCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICBMaXQuQWN0aW9ucy5zZXRSZXNwb25zZSh7IHJlc3BvbnNlOiBKU09OLnN0cmluZ2lmeShkYXRhKSB9KTsKICB9KSgpOw==',
+  ipfsId: undefined,
+  jsParams: {
+    accessControlConditions: [ [Object] ],
+    ciphertext: 'qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD',
+    dataToEncryptHash: '39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'
+  },
+  authMethods: undefined,
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:32.835Z] [ERROR] [core] [id: a465c918ab40a] Something went wrong, internal id for request: lit_a465c918ab40a. Please provide this identifier with any support requests.
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.193Z] [ERROR] [core] [id: a465c918ab40a] most common error: {"success":false,"error":"Uncaught SyntaxError: Unexpected token '{'\n    at <user_provided_script>:12:24"}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.194Z] [ERROR] [core] an error occured, attempting to retry operation
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.295Z] [DEBUG] [core] [id: 9bbaa476a628] getJsExecutionShares
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.296Z] [DEBUG] [core] [id: 9bbaa476a628] sendCommandToNode with url https://cayenne.litgateway.com:7372/web/execute and data {
+  authSig: {
+    sig: 'faa6c6d1aa7fe1914f5be3e361e19bd416e25dc7bb7c6cacb6f8ca7c77233350f135e9da0535b69ba2aea8a77ff5e982c37d732e17db2d2c3f361b3f39eea400',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7372"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  code: 'KGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgYXBpS2V5ID0gYXdhaXQgTGl0LkFjdGlvbnMuZGVjcnlwdEFuZENvbWJpbmUoewogICAgICAgICAgYWNjZXNzQ29udHJvbENvbmRpdGlvbnMsCiAgICAgICAgICBjaXBoZXJ0ZXh0LAogICAgICAgICAgZGF0YVRvRW5jcnlwdEhhc2gsCiAgICAgICAgICBhdXRoU2lnOiBudWxsLAogICAgICAgICAgY2hhaW46ICdldGhlcmV1bScsCiAgICAgIH0pOwogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKAogICAgICAgICJodHRwczovL2FwaS1pbmZlcmVuY2UuaHVnZ2luZ2ZhY2UuY28vbW9kZWxzL2dwdDIiLAogICAgICAgIHsKICAgICAgICAgICAgaGVhZGVyczogeyB7CiAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAiQmVhcmVyICIgKyBhcGlLZXkKICAgICAgICAgIH0gfSwKICAgICAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KGRhdGEpLAogICAgICAgIH0KICAgICk7CiAgICAgIGxldCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICBMaXQuQWN0aW9ucy5zZXRSZXNwb25zZSh7IHJlc3BvbnNlOiBKU09OLnN0cmluZ2lmeShkYXRhKSB9KTsKICB9KSgpOw==',
+  ipfsId: undefined,
+  jsParams: {
+    accessControlConditions: [ [Object] ],
+    ciphertext: 'qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD',
+    dataToEncryptHash: '39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'
+  },
+  authMethods: undefined,
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.300Z] [DEBUG] [core] [id: 9bbaa476a628] sendCommandToNode with url https://cayenne.litgateway.com:7370/web/execute and data {
+  authSig: {
+    sig: '6e649898df0b43d187996308bcf28ec733715f74f596eba06786f23d464591a7ac95381414240d587db0986b6d25b47de0edfc67b71cf4c88f2403a8d285a507',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7370"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  code: 'KGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgYXBpS2V5ID0gYXdhaXQgTGl0LkFjdGlvbnMuZGVjcnlwdEFuZENvbWJpbmUoewogICAgICAgICAgYWNjZXNzQ29udHJvbENvbmRpdGlvbnMsCiAgICAgICAgICBjaXBoZXJ0ZXh0LAogICAgICAgICAgZGF0YVRvRW5jcnlwdEhhc2gsCiAgICAgICAgICBhdXRoU2lnOiBudWxsLAogICAgICAgICAgY2hhaW46ICdldGhlcmV1bScsCiAgICAgIH0pOwogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKAogICAgICAgICJodHRwczovL2FwaS1pbmZlcmVuY2UuaHVnZ2luZ2ZhY2UuY28vbW9kZWxzL2dwdDIiLAogICAgICAgIHsKICAgICAgICAgICAgaGVhZGVyczogeyB7CiAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAiQmVhcmVyICIgKyBhcGlLZXkKICAgICAgICAgIH0gfSwKICAgICAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KGRhdGEpLAogICAgICAgIH0KICAgICk7CiAgICAgIGxldCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICBMaXQuQWN0aW9ucy5zZXRSZXNwb25zZSh7IHJlc3BvbnNlOiBKU09OLnN0cmluZ2lmeShkYXRhKSB9KTsKICB9KSgpOw==',
+  ipfsId: undefined,
+  jsParams: {
+    accessControlConditions: [ [Object] ],
+    ciphertext: 'qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD',
+    dataToEncryptHash: '39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'
+  },
+  authMethods: undefined,
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.306Z] [DEBUG] [core] [id: 9bbaa476a628] sendCommandToNode with url https://cayenne.litgateway.com:7371/web/execute and data {
+  authSig: {
+    sig: 'b263b5b2d38ef217d84dc264a4876f6905c1f4d3c5393d7bd5524b9afb344e1c34c86f0fac408fe1c70b023d8ae535ffda64bef836ee6dff5fc36508e02d7303',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7371"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  code: 'KGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgYXBpS2V5ID0gYXdhaXQgTGl0LkFjdGlvbnMuZGVjcnlwdEFuZENvbWJpbmUoewogICAgICAgICAgYWNjZXNzQ29udHJvbENvbmRpdGlvbnMsCiAgICAgICAgICBjaXBoZXJ0ZXh0LAogICAgICAgICAgZGF0YVRvRW5jcnlwdEhhc2gsCiAgICAgICAgICBhdXRoU2lnOiBudWxsLAogICAgICAgICAgY2hhaW46ICdldGhlcmV1bScsCiAgICAgIH0pOwogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKAogICAgICAgICJodHRwczovL2FwaS1pbmZlcmVuY2UuaHVnZ2luZ2ZhY2UuY28vbW9kZWxzL2dwdDIiLAogICAgICAgIHsKICAgICAgICAgICAgaGVhZGVyczogeyB7CiAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAiQmVhcmVyICIgKyBhcGlLZXkKICAgICAgICAgIH0gfSwKICAgICAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KGRhdGEpLAogICAgICAgIH0KICAgICk7CiAgICAgIGxldCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICBMaXQuQWN0aW9ucy5zZXRSZXNwb25zZSh7IHJlc3BvbnNlOiBKU09OLnN0cmluZ2lmeShkYXRhKSB9KTsKICB9KSgpOw==',
+  ipfsId: undefined,
+  jsParams: {
+    accessControlConditions: [ [Object] ],
+    ciphertext: 'qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD',
+    dataToEncryptHash: '39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'
+  },
+  authMethods: undefined,
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.576Z] [ERROR] [core] [id: 9bbaa476a628] Something went wrong, internal id for request: lit_9bbaa476a628. Please provide this identifier with any support requests.
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.894Z] [ERROR] [core] [id: 9bbaa476a628] most common error: {"success":false,"error":"Uncaught SyntaxError: Unexpected token '{'\n    at <user_provided_script>:12:24"}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.996Z] [DEBUG] [core] [id: eb1cbba987921] getJsExecutionShares
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:33.997Z] [DEBUG] [core] [id: eb1cbba987921] sendCommandToNode with url https://cayenne.litgateway.com:7372/web/execute and data {
+  authSig: {
+    sig: 'faa6c6d1aa7fe1914f5be3e361e19bd416e25dc7bb7c6cacb6f8ca7c77233350f135e9da0535b69ba2aea8a77ff5e982c37d732e17db2d2c3f361b3f39eea400',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7372"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  code: 'KGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgYXBpS2V5ID0gYXdhaXQgTGl0LkFjdGlvbnMuZGVjcnlwdEFuZENvbWJpbmUoewogICAgICAgICAgYWNjZXNzQ29udHJvbENvbmRpdGlvbnMsCiAgICAgICAgICBjaXBoZXJ0ZXh0LAogICAgICAgICAgZGF0YVRvRW5jcnlwdEhhc2gsCiAgICAgICAgICBhdXRoU2lnOiBudWxsLAogICAgICAgICAgY2hhaW46ICdldGhlcmV1bScsCiAgICAgIH0pOwogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKAogICAgICAgICJodHRwczovL2FwaS1pbmZlcmVuY2UuaHVnZ2luZ2ZhY2UuY28vbW9kZWxzL2dwdDIiLAogICAgICAgIHsKICAgICAgICAgICAgaGVhZGVyczogeyB7CiAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAiQmVhcmVyICIgKyBhcGlLZXkKICAgICAgICAgIH0gfSwKICAgICAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KGRhdGEpLAogICAgICAgIH0KICAgICk7CiAgICAgIGxldCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICBMaXQuQWN0aW9ucy5zZXRSZXNwb25zZSh7IHJlc3BvbnNlOiBKU09OLnN0cmluZ2lmeShkYXRhKSB9KTsKICB9KSgpOw==',
+  ipfsId: undefined,
+  jsParams: {
+    accessControlConditions: [ [Object] ],
+    ciphertext: 'qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD',
+    dataToEncryptHash: '39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'
+  },
+  authMethods: undefined,
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:34.000Z] [DEBUG] [core] [id: eb1cbba987921] sendCommandToNode with url https://cayenne.litgateway.com:7370/web/execute and data {
+  authSig: {
+    sig: '6e649898df0b43d187996308bcf28ec733715f74f596eba06786f23d464591a7ac95381414240d587db0986b6d25b47de0edfc67b71cf4c88f2403a8d285a507',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7370"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  code: 'KGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgYXBpS2V5ID0gYXdhaXQgTGl0LkFjdGlvbnMuZGVjcnlwdEFuZENvbWJpbmUoewogICAgICAgICAgYWNjZXNzQ29udHJvbENvbmRpdGlvbnMsCiAgICAgICAgICBjaXBoZXJ0ZXh0LAogICAgICAgICAgZGF0YVRvRW5jcnlwdEhhc2gsCiAgICAgICAgICBhdXRoU2lnOiBudWxsLAogICAgICAgICAgY2hhaW46ICdldGhlcmV1bScsCiAgICAgIH0pOwogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKAogICAgICAgICJodHRwczovL2FwaS1pbmZlcmVuY2UuaHVnZ2luZ2ZhY2UuY28vbW9kZWxzL2dwdDIiLAogICAgICAgIHsKICAgICAgICAgICAgaGVhZGVyczogeyB7CiAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAiQmVhcmVyICIgKyBhcGlLZXkKICAgICAgICAgIH0gfSwKICAgICAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KGRhdGEpLAogICAgICAgIH0KICAgICk7CiAgICAgIGxldCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICBMaXQuQWN0aW9ucy5zZXRSZXNwb25zZSh7IHJlc3BvbnNlOiBKU09OLnN0cmluZ2lmeShkYXRhKSB9KTsKICB9KSgpOw==',
+  ipfsId: undefined,
+  jsParams: {
+    accessControlConditions: [ [Object] ],
+    ciphertext: 'qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD',
+    dataToEncryptHash: '39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'
+  },
+  authMethods: undefined,
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:34.003Z] [DEBUG] [core] [id: eb1cbba987921] sendCommandToNode with url https://cayenne.litgateway.com:7371/web/execute and data {
+  authSig: {
+    sig: 'b263b5b2d38ef217d84dc264a4876f6905c1f4d3c5393d7bd5524b9afb344e1c34c86f0fac408fe1c70b023d8ae535ffda64bef836ee6dff5fc36508e02d7303',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e","resourcePrefix":"lit-accesscontrolcondition"},"ability":"access-control-condition-decryption"}],"capabilities":[{"sig":"0xd6723937f9c453b19cd207e16b912633916d0acbab7bc51055670bbcbc211e670a01b3e08b219775d05344d68973d25e370bfd759181540fd78dd614b95f11d21b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Decryption' for 'lit-accesscontrolcondition://9331d2156d3d96e4413d29575c1f2ee3be42a3534290001d08b1c1c8f783a597/39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'. (2) 'Threshold': 'Execution' for 'lit-litaction://*'.\\n\\nURI: lit:session:2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020\\nVersion: 1\\nChain ID: 1\\nNonce: 0x73de5b1391ec4d65ebd5d431474e1035e0231435ccbf2fe4cb1c63e066e0933e\\nIssued At: 2024-06-01T04:41:32.465Z\\nExpiration Time: 2024-06-08T04:41:30.773Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWFjY2Vzc2NvbnRyb2xjb25kaXRpb246Ly85MzMxZDIxNTZkM2Q5NmU0NDEzZDI5NTc1YzFmMmVlM2JlNDJhMzUzNDI5MDAwMWQwOGIxYzFjOGY3ODNhNTk3LzM5YTdlNzg4Nzc1MzVhZjQyMmVmMjAxYWE5NjNiOTg4ZjNiNDI4OWUxZDYxNGFlZTY0NGZiMDM0NTViNWI2OGUiOnsiVGhyZXNob2xkL0RlY3J5cHRpb24iOlt7fV19LCJsaXQtbGl0YWN0aW9uOi8vKiI6eyJUaHJlc2hvbGQvRXhlY3V0aW9uIjpbe31dfX0sInByZiI6W119","address":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"}],"issuedAt":"2024-06-01T04:41:32.502Z","expiration":"2024-06-01T04:46:32.502Z","nodeAddress":"https://cayenne.litgateway.com:7371"}`,
+    address: '2a83db9d5ee6abd44e4438f13f104c0c2e4d20b2effca61dd26c59ecf3bb8020',
+    algo: 'ed25519'
+  },
+  code: 'KGFzeW5jICgpID0+IHsKICAgICAgY29uc3QgYXBpS2V5ID0gYXdhaXQgTGl0LkFjdGlvbnMuZGVjcnlwdEFuZENvbWJpbmUoewogICAgICAgICAgYWNjZXNzQ29udHJvbENvbmRpdGlvbnMsCiAgICAgICAgICBjaXBoZXJ0ZXh0LAogICAgICAgICAgZGF0YVRvRW5jcnlwdEhhc2gsCiAgICAgICAgICBhdXRoU2lnOiBudWxsLAogICAgICAgICAgY2hhaW46ICdldGhlcmV1bScsCiAgICAgIH0pOwogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKAogICAgICAgICJodHRwczovL2FwaS1pbmZlcmVuY2UuaHVnZ2luZ2ZhY2UuY28vbW9kZWxzL2dwdDIiLAogICAgICAgIHsKICAgICAgICAgICAgaGVhZGVyczogeyB7CiAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiAiQmVhcmVyICIgKyBhcGlLZXkKICAgICAgICAgIH0gfSwKICAgICAgICAgICAgbWV0aG9kOiAiUE9TVCIsCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KGRhdGEpLAogICAgICAgIH0KICAgICk7CiAgICAgIGxldCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICBMaXQuQWN0aW9ucy5zZXRSZXNwb25zZSh7IHJlc3BvbnNlOiBKU09OLnN0cmluZ2lmeShkYXRhKSB9KTsKICB9KSgpOw==',
+  ipfsId: undefined,
+  jsParams: {
+    accessControlConditions: [ [Object] ],
+    ciphertext: 'qwLQ06dnXs5r4iZZ2oPsp1wOsMZ6AocAWlwly+V48EccovJXlu6iuO7S9+oq44Lw0bADq4iEALaJFj+ZuzkDdiE9UTJJV68yAKiBomuL1AAmZhMIE3YM6kE/MF0Hu/t46X65TuxFDtTaRFb6b8EAIwcaOt5+BAcD',
+    dataToEncryptHash: '39a7e78877535af422ef201aa963b988f3b4289e1d614aee644fb03455b5b68e'
+  },
+  authMethods: undefined,
+  epochNumber: 8956
+}
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:34.263Z] [ERROR] [core] [id: eb1cbba987921] Something went wrong, internal id for request: lit_eb1cbba987921. Please provide this identifier with any support requests.
+[Lit-JS-SDK v5.1.0] [2024-06-01T04:41:34.324Z] [ERROR] [core] [id: eb1cbba987921] most common error: {"success":false,"error":"Uncaught SyntaxError: Unexpected token '{'\n    at <user_provided_script>:12:24"}
+
+node:internal/process/esm_loader:34
+      internalBinding('errors').triggerUncaughtException(
+                                ^
+errConstructorFunc {
+  message: 'There was an error getting the signing shares from the nodes',
+  name: undefined,
+  errorCode: 'unknown_error'
+}
+
+Node.js v20.11.1
+Command exited with exit code 1: /home/chineseman/.nvm/versions/node/v20.11.1/bin/node src/index2.js
+chineseman@ls-74Q7HK3:/mnt/c/code/developer-guides-code/lit-action-using-fetch/nodejs$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
