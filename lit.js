@@ -29,10 +29,10 @@ const genActionSource = (query) => {
             body: JSON.stringify(payload),
         }
     );
-    console.log(response);
-    //const result = await response.json();
-    const result = await response.text();
-      Lit.Actions.setResponse({ response: result });
+    //console.log(response);
+    const result = await response.json();
+    //console.log(result);
+        Lit.Actions.setResponse({ response: result[0].generated_text });
   })();`;
 }
 
@@ -197,7 +197,8 @@ const main = async () => {
       accessControlConditions,
       ciphertext,
       dataToEncryptHash
-    }
+    },
+    // targetNodeRange: 1,
   });
 
   console.log("result from action execution:", res);
