@@ -23,7 +23,7 @@ const go = async () => {
   );
   //console.log(response);
   const result = await response.json();
-  console.log(result[0].generated_text);
+  //console.log(result[0].generated_text);
   Lit.Actions.setResponse({ response: result[0].generated_text });
 };
 

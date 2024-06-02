@@ -2,6 +2,11 @@
 import { LitNodeClient, encryptString } from "@lit-protocol/lit-node-client";
 import { LitAbility, LitAccessControlConditionResource, LitActionResource, createSiweMessageWithRecaps, generateAuthSig } from "@lit-protocol/auth-helpers";
 import { ethers } from 'ethers';
+import readline from 'node:readline';
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
 const queries = [
   "What is the world like?",
@@ -196,21 +201,31 @@ const main = async () => {
   Here we use the encrypted key by sending the
   ciphertext and dataTiEncryptHash to the action
   */
-  const res = await client.executeJs({
-    sessionSigs: sessionForDecryption,
-    //code: genActionSource(query),
-    ipfsId: "QmaSuBKYjWn4xb52q7hycST7K79333aAv1nqFFfHvcpvtG",
-    jsParams: {
-      accessControlConditions,
-      ciphertext,
-      dataToEncryptHash,
-      query: "What's the best Chinese food?",
-    },
-    // targetNodeRange: 1,
-  });
+  for await (const q of rl) {
+    //const q = await rl.question(`What would you like to do?`);
+    const res = await client.executeJs({
+      sessionSigs: sessionForDecryption,
+      //code: genActionSource(query),
+      ipfsId: "QmRvXPjipSSjEbn4v563xfjpMCR5UuYZBycHwY6uENngPW",
+      jsParams: {
+        accessControlConditions,
+        ciphertext,
+        dataToEncryptHash,
+        query: q,
+      },
+      // targetNodeRange: 1,
+    });
+    console.log("result from action execution:", res);
+  }
 
-  console.log("result from action execution:", res);
   client.disconnect();
 }
 
+async function questionLoop() {
+  rl.question(`What's your name?`, name => {
+    console.log(`Hi ${name}!`);
+    rl.close();
+  });
+
+}
 await main();
