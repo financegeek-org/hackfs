@@ -1,5 +1,4 @@
 const go = async () => {
-
   const apiKey = await Lit.Actions.decryptAndCombine({
     accessControlConditions,
     ciphertext,
@@ -21,9 +20,8 @@ const go = async () => {
       body: JSON.stringify(payload),
     }
   );
-  //console.log(response);
   const result = await response.json();
-  //console.log(result[0].generated_text);
+  // console.log(result[0].generated_text);
   Lit.Actions.setResponse({ response: result[0].generated_text });
 };
 

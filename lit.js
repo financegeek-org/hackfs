@@ -8,15 +8,14 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+const key = process.env.HUGGING_FACE_API_KEY;
 const queries = [
   "What is the world like?",
   "Tell me some better sleep habits",
   "Tell me some good Chinese food dishes",
 ];
-const query = queries[2];
 
-const key = process.env.HUGGING_FACE_API_KEY;;
-
+/*
 const genActionSource = (query) => {
   return `(async () => {
       const apiKey = await Lit.Actions.decryptAndCombine({
@@ -46,6 +45,8 @@ const genActionSource = (query) => {
         Lit.Actions.setResponse({ response: result[0].generated_text });
   })();`;
 }
+//console.log("action source code: ", genActionSource(query));
+*/
 
 const ONE_WEEK_FROM_NOW = new Date(
   Date.now() + 1000 * 60 * 60 * 24 * 7
@@ -126,7 +127,7 @@ const main = async () => {
       provider: new LocalStorage("./lit_storage.db"),
       },
       */
-    debug: true
+    //debug: true
   });
 
   const wallet = genWallet();
@@ -196,7 +197,6 @@ const main = async () => {
     }
   ]
   );
-  console.log("action source code: ", genActionSource(query));
   /*
   Here we use the encrypted key by sending the
   ciphertext and dataTiEncryptHash to the action
@@ -206,7 +206,8 @@ const main = async () => {
     const res = await client.executeJs({
       sessionSigs: sessionForDecryption,
       //code: genActionSource(query),
-      ipfsId: "QmRvXPjipSSjEbn4v563xfjpMCR5UuYZBycHwY6uENngPW",
+      // ipfsId: "QmRvXPjipSSjEbn4v563xfjpMCR5UuYZBycHwY6uENngPW", // pinata
+      ipfsId: "QmP3epJ1iuic9gRuTtJLSTzzwc56Z3ewFiBBaK3qGvVh1L", // fleek of bafkreia5k64gi5fe7itlqzzabjepacws37brewu47wl56aanyaacsjtcge
       jsParams: {
         accessControlConditions,
         ciphertext,
