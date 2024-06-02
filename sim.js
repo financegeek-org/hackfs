@@ -19,7 +19,7 @@ async function main() {
 
   console.log(response);
   const result = await response.json();
-  console.log(result);
+  console.log(result[0].generated_text);
 }
 
 main();
