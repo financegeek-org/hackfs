@@ -4,7 +4,7 @@ import { LitAbility, LitAccessControlConditionResource, LitActionResource, creat
 import { ethers } from 'ethers';
 
 const query = `What is the world like?`;
-const key = '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';
+const key = process.env.HUGGING_FACE_API_KEY;;
 
 const genActionSource = (query) => {
   return `(async () => {
@@ -15,18 +15,24 @@ const genActionSource = (query) => {
           authSig: null,
           chain: 'ethereum',
       });
+      const payload = {
+        "inputs": "${query}",
+    };
       const response = await fetch(
         "https://api-inference.huggingface.co/models/gpt2",
         {
-            headers: { {
-              'Authorization': "Bearer " + apiKey
-          } },
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + apiKey,
+          },
             method: "POST",
-            body: JSON.stringify(data),
+            body: JSON.stringify(payload),
         }
     );
-      let data = await response.json();
-      Lit.Actions.setResponse({ response: JSON.stringify(data) });
+    console.log(response);
+    //const result = await response.json();
+    const result = await response.text();
+      Lit.Actions.setResponse({ response: result });
   })();`;
 }
 
@@ -120,17 +126,31 @@ const main = async () => {
       contractAddress: '',
       standardContractType: '',
       chain,
-      method: '',
-      parameters: [
-        ':userAddress',
-      ],
+      method: 'eth_getBalance',
+      parameters: [':userAddress', 'latest'],
       returnValueTest: {
-        comparator: '=',
-        value: '0x6Bd07000C5F746af69BEe7f151eb30285a6678B2'
+        comparator: '>=',
+        value: '0',
+      },
+    },
+  ];
+  /*
+    const accessControlConditions = [
+      {
+        contractAddress: '',
+        standardContractType: '',
+        chain,
+        method: '',
+        parameters: [
+          ':userAddress',
+        ],
+        returnValueTest: {
+          comparator: '=',
+          value: '0x6Bd07000C5F746af69BEe7f151eb30285a6678B2'
+        }
       }
-    }
-  ]
-
+    ]
+  */
 
   await client.connect();
   /*
