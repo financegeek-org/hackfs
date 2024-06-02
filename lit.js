@@ -198,11 +198,13 @@ const main = async () => {
   */
   const res = await client.executeJs({
     sessionSigs: sessionForDecryption,
-    code: genActionSource(query),
+    //code: genActionSource(query),
+    ipfsId: "QmaSuBKYjWn4xb52q7hycST7K79333aAv1nqFFfHvcpvtG",
     jsParams: {
       accessControlConditions,
       ciphertext,
-      dataToEncryptHash
+      dataToEncryptHash,
+      query: "What's the best Chinese food?",
     },
     // targetNodeRange: 1,
   });
