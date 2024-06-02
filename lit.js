@@ -3,7 +3,13 @@ import { LitNodeClient, encryptString } from "@lit-protocol/lit-node-client";
 import { LitAbility, LitAccessControlConditionResource, LitActionResource, createSiweMessageWithRecaps, generateAuthSig } from "@lit-protocol/auth-helpers";
 import { ethers } from 'ethers';
 
-const query = `What is the world like?`;
+const queries = [
+  "What is the world like?",
+  "Tell me some better sleep habits",
+  "Tell me some good Chinese food dishes",
+];
+const query = queries[2];
+
 const key = process.env.HUGGING_FACE_API_KEY;;
 
 const genActionSource = (query) => {
@@ -31,7 +37,7 @@ const genActionSource = (query) => {
     );
     //console.log(response);
     const result = await response.json();
-    //console.log(result);
+    console.log(result[0].generated_text);
         Lit.Actions.setResponse({ response: result[0].generated_text });
   })();`;
 }
